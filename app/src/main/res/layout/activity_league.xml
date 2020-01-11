@@ -13,15 +13,16 @@
             android:id="@+id/imageView3"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
-            android:scaleType="centerCrop"/>
+            android:scaleType="centerCrop" android:contentDescription="@string/background_image"/>
     <ImageView
             android:layout_width="88dp"
             android:layout_height="29dp" app:srcCompat="@drawable/swooshlogo"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" android:id="@+id/imageView4" android:scaleType="fitCenter"
-            android:layout_marginTop="24dp" app:layout_constraintTop_toTopOf="parent"/>
+            android:layout_marginTop="24dp" app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/app_logo"/>
     <TextView
-            android:text="Desierd League"
+            android:text="@string/desierd_league"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
@@ -36,26 +37,26 @@
             app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
             android:layout_marginTop="32dp" app:layout_constraintTop_toBottomOf="@+id/textView4">
         <ToggleButton
-                android:text="MENS"
+                android:text="@string/MENS"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/toggleButton3" android:textOff="MENS"
-                android:textOn="MENS" android:textColor="@android:color/white"
+                android:layout_height="wrap_content" android:id="@+id/toggleButton3" android:textOff="@string/MENS"
+                android:textOn="@string/MENS" android:textColor="@android:color/white"
                 android:background="@drawable/swoosh_toggle"/>
         <ToggleButton
-                android:text="WOMENS"
+                android:text="@string/WOMENS"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/toggleButton2" android:layout_marginTop="16dp"
-                android:layout_marginBottom="16dp" android:textOff="WOMENS" android:textOn="WOMENS"
+                android:layout_marginBottom="16dp" android:textOff="@string/WOMENS" android:textOn="@string/WOMENS"
                 android:textColor="@android:color/white" android:background="@drawable/swoosh_toggle"/>
         <ToggleButton
-                android:text="Co-Ed"
+                android:text="@string/co_ed"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/toggleButton" android:textOff="Co-Ed"
-                android:textOn="Co-Ed" android:textColor="@android:color/white"
+                android:layout_height="wrap_content" android:id="@+id/toggleButton" android:textOff="@string/co_ed"
+                android:textOn="@string/co_ed" android:textColor="@android:color/white"
                 android:background="@drawable/swoosh_toggle"/>
     </LinearLayout>
     <Button
-            android:text="NEXT"
+            android:text="@string/next"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
