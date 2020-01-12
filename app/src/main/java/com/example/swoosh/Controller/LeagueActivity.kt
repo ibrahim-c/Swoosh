@@ -1,10 +1,12 @@
-package com.example.swoosh
+package com.example.swoosh.Controller
 
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import com.example.swoosh.Utilities.EXTRA_LEAGUE
+import com.example.swoosh.R
 import kotlinx.android.synthetic.main.activity_league.*
 
 class LeagueActivity : AppCompatActivity() {
@@ -19,7 +21,7 @@ class LeagueActivity : AppCompatActivity() {
 
     fun leagueNextClicked (view: View){
         if (selectedLeague!=""){
-            val skillIntent=Intent(this,SkillActivity::class.java)
+            val skillIntent=Intent(this, SkillActivity::class.java)
             skillIntent.putExtra(EXTRA_LEAGUE,selectedLeague)
             startActivity(skillIntent)}
         else {
