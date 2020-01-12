@@ -1,7 +1,9 @@
 package com.example.swoosh
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 
 class LeagueActivity : AppCompatActivity() {
 
@@ -9,4 +11,17 @@ class LeagueActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_league)
     }
+
+
+    fun leagueNextClicked (view: View){
+        val skillIntent=Intent(this,SkillActivity::class.java)
+        startActivity(skillIntent)
+    }
+
+
+
+
+
+
+
 }
