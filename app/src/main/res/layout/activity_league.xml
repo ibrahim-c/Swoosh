@@ -39,21 +39,22 @@
         <ToggleButton
                 android:text="@string/MENS"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/toggleButton3" android:textOff="@string/MENS"
+                android:layout_height="wrap_content" android:id="@+id/mensLeagueBtn" android:textOff="@string/MENS"
                 android:textOn="@string/MENS" android:textColor="@android:color/white"
-                android:background="@drawable/swoosh_toggle"/>
+                android:background="@drawable/swoosh_toggle" android:onClick="mensButonClicked"/>
         <ToggleButton
                 android:text="@string/WOMENS"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/toggleButton2" android:layout_marginTop="16dp"
+                android:layout_height="wrap_content" android:id="@+id/womensLeagueBtn" android:layout_marginTop="16dp"
                 android:layout_marginBottom="16dp" android:textOff="@string/WOMENS" android:textOn="@string/WOMENS"
-                android:textColor="@android:color/white" android:background="@drawable/swoosh_toggle"/>
+                android:textColor="@android:color/white" android:background="@drawable/swoosh_toggle"
+                android:onClick="womensButonClicked"/>
         <ToggleButton
                 android:text="@string/co_ed"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/toggleButton" android:textOff="@string/co_ed"
+                android:layout_height="wrap_content" android:id="@+id/coedLeagueBtn" android:textOff="@string/co_ed"
                 android:textOn="@string/co_ed" android:textColor="@android:color/white"
-                android:background="@drawable/swoosh_toggle"/>
+                android:background="@drawable/swoosh_toggle" android:onClick="coedButonClicked"/>
     </LinearLayout>
     <Button
             android:text="@string/next"
